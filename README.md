@@ -7,8 +7,6 @@ Mỗi ngày làm 2 tiếng
     + grid 
 
 - Giờ làm việc: 2:30 ~ 4:30
-xdxd
-
 
 
 

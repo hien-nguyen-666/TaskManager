@@ -6,8 +6,7 @@ Mỗi ngày làm 2 tiếng
     + HTML popup
     + grid 
 
--
-
+- Giờ làm việc: 2:30 ~ 4:30
 
 
 

@@ -9,16 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="list.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container popup-properties">
+    <div class="container p-3 popup-properties">
+
+        <span class="material-icons close-button">
+            cancel
+        </span>
         <div class="row">
             <h1 class="col-sm-12 text-center">新規プロジェクト追加</h1>
         </div>
-        <div class="row mt-4">
-            <label class="col-sm-3 ms-5 title-properties" for="">プロジェクト名</label>
-            <input class=" col-sm-8" type="text" name="projectName" id="projectName">
+        <div class="row mt-4 ms-2 me-2">
+            <label class="col-sm-3 title-properties" for="">プロジェクト名</label>
+            <input class="col-sm-9" type="text" name="projectName" id="projectName">
         </div>
         <button class="btn btn-default btn-danger mt-4 center-obj">登録</button>
     </div>

@@ -30,34 +30,42 @@
             </span>
         </button>
         <div class="row">
-            <h1 class="col-sm-12 text-center fw-bold">新規プロジェクト追加</h1>
+            <h1 class="col-sm-12 text-center">新規プロジェクト追加</h1>
         </div>
         <div class="row mt-4 ms-3 me-3">
             <label class="col-sm-3 title-properties" for="">プロジェクト名</label>
-            <input class="col-sm-9" type="text" id="projectName" name="projectName" placeholder="いずれをを入力してください…">
+            <input class="col-sm-9" type="text" id="projectName" name="projectName" placeholder="いずれを入力してください…">
         </div>
-        <button class="btn btn-default btn-danger mt-4 ps-3 pe-3 center-obj" id="myCloseButton" onclick=""
-            type="submit">追加</button>
+        <button class="btn btn-default btn-danger mt-4 center-obj" id="myCloseButton" onclick=""
+            type="submit">登録</button>
     </div>
 
     <!-- Popup 2 -->
-    <div class="container p-3 popup-properties animate__fadeIn" style="display: none;font-weight: bold;" id="myPopup2">
+    <div class="container p-3 popup-properties animate__fadeIn" style="display: none;" id="myPopup2">
         <button type="button" class="close-button close" aria-label="Close" id="myCloseButton" onclick="closeForm()">
             <span class="material-icons">
                 cancel
             </span>
         </button>
         <div class="row">
-            <h1 class="col-sm-12 text-center">Pop-up 2</h1>
+            <h1 class="col-sm-12 text-center">新規タスク登録</h1>
         </div>
         <div class="row mt-4 ms-3 me-3">
-            <label class="col-sm-3 title-properties" for="">プロジェクト名</label>
-            <input class="col-sm-9" type="text" id="projectName" name="projectName" placeholder="いずれをを入力してください…">
+            <label class="col-sm-3 title-properties" for="">タスク名</label>
+            <input class="col-sm-9" type="text" id="projectName" name="projectName" placeholder="いずれを入力してください…">
         </div>
-        <button class="btn btn-default btn-danger mt-4 center-obj" id="myCloseButton" onclick=""
+        <div class="row mt-4 ms-3 me-3">
+            <label class="col-sm-3 title-properties" for="">切日</label>
+            <input class="col-sm-8" type="text" id="projectName" name="projectName">
+            <button class= "col-sm-1">
+                <span class="material-icons">
+                    event
+                </span>
+            </button>
+        </div>
+        <button class="btn btn-default btn-danger mt-4 center-obj x" id="myCloseButton" onclick=""
             type="submit">登録</button>
     </div>
-
     <!-- Popup 3 -->
     <div class="container p-3 popup-properties animate__fadeIn" style="display: none;" id="myPopup3">
         <button type="button" class="close-button close" aria-label="Close" id="myCloseButton" onclick="closeForm()">
@@ -66,14 +74,30 @@
             </span>
         </button>
         <div class="row">
-            <h1 class="col-sm-12 text-center">Pop-up 3</h1>
+            <h1 class="col-sm-12 text-center">作業詳細情報</h1>
         </div>
         <div class="row mt-4 ms-3 me-3">
-            <label class="col-sm-3 title-properties" for="">プロジェクト名</label>
-            <input class="col-sm-9" type="text" id="projectName" name="projectName" placeholder="いずれをを入力してください…">
+            <div>
+                <label class="col-sm-1 title-properties" for="">1</label>
+                <input class="col-sm-1" type="text" id="projectName" name="projectName">
+                <label class="col-sm-1 title-properties" for="">2</label>
+                <input class="col-sm-3" type="text" id="projectName" name="projectName">
+                <input class="col-sm-4" type="text" id="projectName" name="projectName" placeholder="備考">
+                <button class= "col-sm-1">
+                <span class="material-icons">
+                    event
+                </span>
+                </button>
+            </div>
         </div>
-        <button class="btn btn-default btn-danger mt-4 center-obj" id="myCloseButton" onclick=""
-            type="submit">登録</button>
+        <div class="row mt-4 ms-3 me-3">
+            <div>
+                <label class="col-sm-1 title-properties" for="">3</label>
+                <input class="col-sm-1" type="text" id="projectName" name="projectName">
+                <label class="col-sm-1 title-properties" for="">4</label>
+                <input class="col-sm-3" type="text" id="projectName" name="projectName">
+            </div>
+        </div>
     </div>
 
     <!-- Popup 4 -->
@@ -84,14 +108,29 @@
             </span>
         </button>
         <div class="row">
-            <h1 class="col-sm-12 text-center">Pop-up 4</h1>
+            <h1 class="col-sm-12 text-center">CSVデータ抽出</h1>
+        </div>
+        <div class="row">
+            <h5 class="col-sm-12 text-center">期間を指した上、「抽出」ボタンを押してください。</h5>
         </div>
         <div class="row mt-4 ms-3 me-3">
-            <label class="col-sm-3 title-properties" for="">プロジェクト名</label>
-            <input class="col-sm-9" type="text" id="projectName" name="projectName" placeholder="いずれをを入力してください…">
+            <div>
+                <input class="col-sm-4" type="text" id="projectName" name="projectName">
+                <button class= "col-sm-1">
+                    <span class="material-icons">
+                        event
+                    </span>
+                </button>
+                <input class="col-sm-4" type="text" id="projectName" name="projectName">
+                <button class= "col-sm-1">
+                    <span class="material-icons">
+                        event
+                    </span>
+                </button>
+            </div>
         </div>
         <button class="btn btn-default btn-danger mt-4 center-obj" id="myCloseButton" onclick=""
-            type="submit">登録</button>
+            type="submit">抽出</button>
     </div>
 
     <div class="d-flex justify-content-around" style="margin: auto 20vw 5vh 20vw;">
@@ -102,5 +141,6 @@
     </div>
 
 </body>
+
 
 </html>
